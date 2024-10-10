@@ -41,7 +41,7 @@
 
   <div class="hero_area">
     <!-- header section strats -->
-    <header class="header_section">
+    <!-- <header class="header_section">
       <div class="header_top">
         <div class="container">
           <div class="contact_nav">
@@ -124,7 +124,8 @@
           </nav>
         </div>
       </div>
-    </header>
+    </header> -->
+    <?php include('header.php'); ?>
     <!-- end header section -->
     <!-- slider section -->
     <section class="slider_section ">
