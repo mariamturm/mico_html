@@ -215,7 +215,7 @@
 
 
   <!-- info section -->
-  <section class="info_section ">
+  <!-- <section class="info_section ">
     <div class="container">
       <div class="info_top">
         <div class="info_logo">
@@ -353,7 +353,8 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
+  <?php include('info-section.php'); ?>
   <!-- end info_section -->
 
 

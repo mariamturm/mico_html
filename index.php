@@ -666,7 +666,7 @@
   <!-- end contact section -->
 
   <!-- info section -->
-  <section class="info_section ">
+  <!-- <section class="info_section ">
     <div class="container">
       <div class="info_top">
         <div class="info_logo">
@@ -682,10 +682,10 @@
             </button>
           </form>
         </div>
-      </div>
-      <div class="info_bottom layout_padding2">
-        <div class="row info_main_row">
-          <div class="col-md-6 col-lg-3">
+      </div> -->
+      <!-- <div class="info_bottom layout_padding2">
+        <div class="row info_main_row"> -->
+          <!-- <div class="col-md-6 col-lg-3">
             <h5>
               Address
             </h5>
@@ -800,11 +800,12 @@
                 </p>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+          </div> -->
+        <!-- </div>
+      </div> -->
+    <!-- </div>
+  </section> -->
+  <?php include('info-section.php'); ?>
   <!-- end info_section -->
 
 
