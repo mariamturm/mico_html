@@ -79,9 +79,7 @@
 
 
   <!-- info section -->
-
   <?php include('info-section.php'); ?>
-  
   <!-- end info_section -->
 
 
