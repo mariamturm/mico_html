@@ -132,7 +132,7 @@
 
 
   <!-- client section -->
-  <section class="client_section layout_padding">
+  <!-- <section class="client_section layout_padding">
     <div class="container">
       <div class="heading_container">
         <h2>
@@ -210,7 +210,9 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
+  <?php include('client-section.php'); ?>
+
   <!-- end client section -->
 
 
