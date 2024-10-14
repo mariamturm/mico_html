@@ -126,8 +126,9 @@
       </div>
     </header>
     <!-- end header section -->
+
     <!-- slider section -->
-    <section class="slider_section ">
+    <!-- <section class="slider_section ">
       <div class="dot_design">
         <img src="images/dots.png" alt="">
       </div>
@@ -242,8 +243,20 @@
         </div>
       </div>
 
-    </section>
+    </section> -->
+    <?php
+include('slider_section.php');
+?>
+
+
+
+
     <!-- end slider section -->
+
+
+
+
+
   </div>
 
 
@@ -436,7 +449,7 @@
 
   <!-- team section -->
 
-  <section class="team_section layout_padding">
+  <!-- <section class="team_section layout_padding">
     <div class="container">
       <div class="heading_container heading_center">
         <h2>
@@ -535,7 +548,12 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
+
+  <?php
+include('team_section.php');
+?>
+
 
   <!-- end team section -->
 
