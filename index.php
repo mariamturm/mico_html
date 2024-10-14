@@ -1,3 +1,13 @@
+
+
+
+
+
+
+
+
+
+
 <!DOCTYPE html>
 <html>
 
@@ -13,6 +23,7 @@
   <meta name="author" content="" />
 
   <title>Mico</title>
+
 
 
   <!-- bootstrap core css -->
@@ -34,6 +45,9 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
+  <!-- appointment section style -->
+  <link href="css/appointment.css" rel="stylesheet" />
+
 
 </head>
 
@@ -56,63 +70,151 @@
 
   <!-- book section -->
 
-  <section class="book_section layout_padding">
+  
+<!------------------------------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------ MARIAMI DELIBASHVILI --------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------------------------->
+
+
+
+
+<section class="book_section layout_padding">
     <div class="container">
       <div class="row">
         <div class="col">
-          <form>
-            <h4>
-              BOOK <span>APPOINTMENT</span>
-            </h4>
-            <div class="form-row ">
+
+          <form method="POST" action="" id="appointmentForm">
+            <h4>BOOK <span>APPOINTMENT</span></h4>
+            <div class="form-row">
+
+
+
+
               <div class="form-group col-lg-4">
-                <label for="inputPatientName">Patient Name </label>
-                <input type="text" class="form-control" id="inputPatientName" placeholder="">
+                <label for="inputPatientName">Patient Name NEW</label><br>
+                <input type="text" id="inputPatientName" name="inputPatientName" class="form-control" placeholder="I like pie"required>
               </div>
-              <div class="form-group col-lg-4">
-                <label for="inputDoctorName">Doctor's Name</label>
-                <select name="" class="form-control wide" id="inputDoctorName">
-                  <option value="Normal distribution ">Normal distribution </option>
-                  <option value="Normal distribution ">Normal distribution </option>
-                  <option value="Normal distribution ">Normal distribution </option>
+
+
+              <div class="form-group col-lg-4">            
+                <label for="inputDoctorName">Doctor's Name NEW:</label>
+                <select id="inputDoctorName" name="inputDoctorName" class="form-control" required>
+                  <option value="Doctor A">Doctor A</option>
+                  <option value="Doctor B">Doctor B</option>
+                  <option value="Doctor C">Doctor C</option>
                 </select>
               </div>
+
+
               <div class="form-group col-lg-4">
                 <label for="inputDepartmentName">Department's Name</label>
-                <select name="" class="form-control wide" id="inputDepartmentName">
-                  <option value="Normal distribution ">Normal distribution </option>
-                  <option value="Normal distribution ">Normal distribution </option>
-                  <option value="Normal distribution ">Normal distribution </option>
+                <select name="inputDepartmentName" class="form-control wide" id="inputDepartmentName" required>
+                  <option value="Department A">Department A</option>
+                  <option value="Department B">Department B</option>
+                  <option value="Department C">Department C</option>
                 </select>
               </div>
+
             </div>
-            <div class="form-row ">
+
+            <div class="form-row">
+
               <div class="form-group col-lg-4">
-                <label for="inputPhone">Phone Number</label>
-                <input type="number" class="form-control" id="inputPhone" placeholder="XXXXXXXXXX">
+                <label for="inputPhone">Phone Number:</label><br>
+                <input type="text" id="inputPhone" name="inputPhone" class="form-control" placeholder="XXXXXXXXXX" required>
               </div>
+
+<!--
               <div class="form-group col-lg-4">
                 <label for="inputSymptoms">Symptoms</label>
-                <input type="text" class="form-control" id="inputSymptoms" placeholder="">
+                <input type="text" class="form-control" id="inputSymptoms" name="inputSymptoms" placeholder="">
               </div>
+-->
               <div class="form-group col-lg-4">
-                <label for="inputDate">Choose Date </label>
-                <div class="input-group date" id="inputDate" data-date-format="mm-dd-yyyy">
-                  <input type="text" class="form-control" readonly>
-                  <span class="input-group-addon date_icon">
-                    <i class="fa fa-calendar" aria-hidden="true"></i>
-                  </span>
-                </div>
+                <label for="inputSymptoms">Symptoms:</label><br>
+                <textarea id="inputSymptoms" name="inputSymptoms" class="form-control" required></textarea>
               </div>
+
+
+              <div class="form-group col-lg-4">
+                <label for="inputDate">Choose Date:</label><br>
+                <input type="text" class="form-control" id="inputDate" name="inputDate" placeholder="mm-dd-yyyy" required>
+              </div>
+
             </div>
             <div class="btn-box">
-              <button type="submit" class="btn ">Submit Now</button>
+              <button type="submit" class="btn">Submit Now</button>
             </div>
           </form>
+
         </div>
       </div>
     </div>
   </section>
+
+
+
+
+    <!-- Overlay for the popup -->
+    <div id="overlay" class="overlay"></div>
+
+    <!-- Popup window -->
+    <div id="popup" class="popup">
+        <p id="popupContent"></p>
+        <div class="btn-box">
+          <button class="btn" id="closePopup">Close</button>
+        </div>
+    </div>
+
+    <script>
+        const form = document.getElementById('appointmentForm');
+        const popup = document.getElementById('popup');
+        const overlay = document.getElementById('overlay');
+        const popupContent = document.getElementById('popupContent');
+        const closePopup = document.getElementById('closePopup');
+
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            // Collect form data
+            const formData = new FormData(form);
+
+            // Use AJAX to submit the form data to the PHP script
+            const xhr = new XMLHttpRequest();
+            xhr.open('POST', 'appointment.php', true);
+            xhr.onload = function () {
+                if (xhr.status === 200) {
+                    // Show popup with appointment information
+                    popupContent.innerHTML = xhr.responseText;
+                    popup.classList.add('show');
+                    overlay.classList.add('show');
+                } else {
+                    alert('There was an error with your submission.');
+                }
+            };
+            xhr.send(formData);
+        });
+
+        // Close popup and overlay
+        closePopup.addEventListener('click', function() {
+            popup.classList.remove('show');
+            overlay.classList.remove('show');
+        });
+    </script>
+
+
+
+
+
+
+
+
+
+<!------------------------------------------------------------------------------------------------------------------------------->
+<!------------------------------------- END OF MARI's SECTION ------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------------------------->
+
+
 
 
   <!-- end book section -->
