@@ -1,7 +1,7 @@
 <?php
 // header.php
 
-include('header-data.php');  // Include the data file
+include('data.php');  // Include the data file
 include('header-function.php');  // Include the functions file
 ?>
 

@@ -1,6 +1,6 @@
 <?php
 // Include the data and functions
-include 'treatment-data.php';
+include 'data.php';
 include 'treatment-function.php';
 ?>
 

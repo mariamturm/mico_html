@@ -1,5 +1,5 @@
 <?php
-include 'client-section-data.php'; // Include the data
+include 'data.php'; // Include the data
 include 'client-section-function.php'; // Include the function
 ?>
 

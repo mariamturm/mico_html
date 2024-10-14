@@ -2,7 +2,7 @@
 
 <?php
 // Include the data and functions files
-include ('info-section-data.php');
+include ('data.php');
 include ('info-section-function.php');
 ?>
 

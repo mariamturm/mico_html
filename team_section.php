@@ -1,5 +1,5 @@
 <?php
-include 'team_section_data.php';
+include 'data.php';
 include 'teamsection_function.php';
 ?>
 

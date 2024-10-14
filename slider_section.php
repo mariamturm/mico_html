@@ -1,5 +1,5 @@
 <?php
-include 'slider_data.php';
+include 'data.php';
 include 'slider_functions.php';
 ?>
 
