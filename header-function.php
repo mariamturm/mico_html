@@ -1,5 +1,4 @@
 <?php
-// functions.php
 
 function displayContacts($contacts) {
     foreach ($contacts as $contact) {
