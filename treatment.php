@@ -132,7 +132,7 @@
 
   <!-- treatment section -->
 
-  <section class="treatment_section layout_padding">
+  <!-- <section class="treatment_section layout_padding">
     <div class="side_img">
       <img src="images/treatment-side-img.jpg" alt="">
     </div>
@@ -217,7 +217,9 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
+
+  <?php include('treatment-section.php'); ?>
 
   <!-- end treatment section -->
 
