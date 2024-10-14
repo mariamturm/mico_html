@@ -55,15 +55,11 @@
 
   <div class="hero_area">
     <!-- header section strats -->
-
     <?php include('header.php'); ?>
-
     <!-- end header section -->
 
     <!-- slider section -->
-
     <?php include('slider_section.php'); ?>
-
     <!-- end slider section -->
   </div>
 
@@ -74,9 +70,6 @@
 <!------------------------------------------------------------------------------------------------------------------------------->
 <!------------------------------------------------------ MARIAMI DELIBASHVILI --------------------------------------------------->
 <!------------------------------------------------------------------------------------------------------------------------------->
-
-
-
 
 <section class="book_section layout_padding">
     <div class="container">
@@ -165,7 +158,7 @@
           <button class="btn" id="closePopup">Close</button>
         </div>
     </div>
-
+  
     <script>
         const form = document.getElementById('appointmentForm');
         const popup = document.getElementById('popup');
@@ -201,12 +194,6 @@
             overlay.classList.remove('show');
         });
     </script>
-
-
-
-
-
-
 
 
 
@@ -253,22 +240,16 @@
 
 
   <!-- treatment section -->
-
   <?php include ('treatment-section.php'); ?>
-
   <!-- end treatment section -->
 
   <!-- team section -->
-
   <?php include('team_section.php'); ?>
-
   <!-- end team section -->
 
 
   <!-- client section -->
-  
   <?php include('client-section.php'); ?>
-
   <!-- end client section -->
 
   <!-- contact section -->
@@ -316,9 +297,7 @@
   <!-- end contact section -->
 
   <!-- info section -->
-
   <?php include('info-section.php'); ?>
-  
   <!-- end info_section -->
 
 
