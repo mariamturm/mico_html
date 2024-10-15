@@ -17,7 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
    
 
     <div class=\"book_section\">
-        <div class=\"oppointment-size\">
+        <div class=\"appointment-size\">
             <h4> <span> APPOINTMENT </span> BOOKED!</h4>
             <table>
                 <tr>

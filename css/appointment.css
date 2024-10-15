@@ -4,50 +4,58 @@
     padding: 20px;
     border: 1px solid #ccc;
 }
+
 .popup {
-    display: none;
     position: fixed;
-    padding: 20px;
-    background-color: white;
-    border: 2px solid #ccc;
-    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    padding: 5px;
+    background: #fff;
+    z-index: 1000;
+    display: none;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
+
 .popup.show {
     display: block;
 }
+
 .overlay {
-    display: none;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 5;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 999; /* Make sure overlay is just below the popup */
+    display: none;
 }
+
 .overlay.show {
     display: block;
 }
 
-.oppointment-size {
+.appointment-size {
     line-height: 200%;
     border: 1px solid #00c6a9;
     border-radius: 3px;
-    padding: 20px;
-    margin: 20px;
+    padding: 10px;
+    margin: 5px;
 
 }
 
-
-.oppointment-size td{
+.appointment-size td{
     padding-left: 3px;
     padding-top: 3px;
     padding-bottom: 3px;
     padding-right: 10px;
 
 }
-
-
 
 .popup button.btn {
     background-color: #252525;

@@ -74,13 +74,13 @@
 
 
               <div class="form-group col-lg-4">
-                <label for="inputPatientName">Patient Name NEW</label><br>
-                <input type="text" id="inputPatientName" name="inputPatientName" class="form-control" placeholder="I like pie"required>
+                <label for="inputPatientName">Patient Name</label><br>
+                <input type="text" id="inputPatientName" name="inputPatientName" class="form-control" required>
               </div>
 
 
               <div class="form-group col-lg-4">            
-                <label for="inputDoctorName">Doctor's Name NEW:</label>
+                <label for="inputDoctorName">Doctor's Name</label>
                 <select id="inputDoctorName" name="inputDoctorName" class="form-control" required>
                   <option value="Doctor A">Doctor A</option>
                   <option value="Doctor B">Doctor B</option>
@@ -103,7 +103,7 @@
             <div class="form-row">
 
               <div class="form-group col-lg-4">
-                <label for="inputPhone">Phone Number:</label><br>
+                <label for="inputPhone">Phone Number</label><br>
                 <input type="text" id="inputPhone" name="inputPhone" class="form-control" placeholder="XXXXXXXXXX" required>
               </div>
 
@@ -114,19 +114,19 @@
               </div>
 -->
               <div class="form-group col-lg-4">
-                <label for="inputSymptoms">Symptoms:</label><br>
+                <label for="inputSymptoms">Symptoms</label><br>
                 <textarea id="inputSymptoms" name="inputSymptoms" class="form-control" required></textarea>
               </div>
 
 
               <div class="form-group col-lg-4">
-                <label for="inputDate">Choose Date:</label><br>
+                <label for="inputDate">Choose Date</label><br>
                 <input type="text" class="form-control" id="inputDate" name="inputDate" placeholder="mm-dd-yyyy" required>
               </div>
 
             </div>
             <div class="btn-box">
-              <button type="submit" class="btn">Submit Now</button>
+              <button type="submit" class="btn">Submit</button>
             </div>
           </form>
 
